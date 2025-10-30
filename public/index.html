@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlene - Assistente de Costura</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="bot-avatar">
+                    <div class="avatar">🧵</div>
+                </div>
+                <div class="header-info">
+                    <h1>Charlene</h1>
+                    <p class="subtitle">Sua assistente virtual de costura</p>
+                </div>
+                <div class="header-status">
+                    <div class="status online"></div>
+                    <span>Online</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message welcome-message">
+                    <div class="message-avatar">🧵</div>
+                    <div class="message-content">
+                        <p>👋 Olá! Eu sou a Charlene, sua assistente virtual especializada em costura! Como posso ajudar você hoje?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-group">
+                    <button class="audio-btn" id="audioBtn" title="Gravar áudio">
+                        🎤
+                    </button>
+                    <input type="text" id="messageInput" placeholder="Digite sua pergunta sobre costura..." maxlength="500">
+                    <button class="send-btn" id="sendBtn">
+                        <span>Enviar</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="audio-recorder hidden" id="audioRecorder">
+                    <div class="recorder-content">
+                        <div class="recording-indicator">
+                            <div class="pulse"></div>
+                            <span>Gravando... Clique para parar</span>
+                        </div>
+                        <button class="stop-recording" id="stopRecording">⏹️ Parar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>💡 Dica: Você pode digitar ou gravar áudio. Charlene é especializada em costura, modelagem e ateliê.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
