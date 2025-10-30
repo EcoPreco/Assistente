@@ -1,0 +1,23 @@
+{
+  "name": "charlene-web-bot",
+  "version": "1.0.0",
+  "description": "Charlene - Assistente Virtual de Costura para Web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.0.0",
+    "path": "^0.12.7",
+    "gtts": "^0.2.1",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
